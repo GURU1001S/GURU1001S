@@ -259,15 +259,10 @@ Proves neural networks can perform **symbolic regression on physical simulations
 
 ## 📊 GITHUB COMMAND CENTER
 
-<!-- 
-  IMPORTANT: github-readme-stats.vercel.app public instance is rate-limited.
-  If cards show "couldn't generate", add &cache_seconds=86400 or self-host.
-  Streak stats use demolab.com which is the stable hosted version.
--->
-
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=GURU1001S&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d4ff&icon_color=7aa2f7&text_color=c0caf5&ring_color=00d4ff&include_all_commits=true&count_private=true&cache_seconds=86400" alt="GitHub Stats"/>
+<!-- Stats + Languages generated daily by GitHub Action → stored as local SVG files, never rate-limited -->
+<img height="180" src="assets/metrics-stats.svg" alt="GitHub Stats"/>
 &nbsp;
-<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=GURU1001S&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d4ff&text_color=c0caf5&langs_count=8&cache_seconds=86400" alt="Top Languages"/>
+<img height="180" src="assets/metrics-langs.svg" alt="Top Languages"/>
 
 <br/><br/>
 
@@ -285,10 +280,25 @@ Proves neural networks can perform **symbolic regression on physical simulations
 
 <div align="center">
 
-## 🏆 TROPHIES
+## 🏆 TROPHIES & STATS
 
-<!-- rank=-UNKNOWN = exclude only unranked, show EVERYTHING else (C,B,A,AA,AAA,S,SS,SSS) -->
-<img src="https://github-profile-trophy.vercel.app/?username=GURU1001S&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&column=7&rank=-UNKNOWN" alt="GitHub Trophies"/>
+<!-- shields.io /github/ endpoints read public GitHub data directly — zero rate limits, always renders -->
+
+![Followers](https://img.shields.io/github/followers/GURU1001S?style=for-the-badge&color=00d4ff&labelColor=0d1117&label=Followers&logo=github&logoColor=white)
+&nbsp;
+![Stars](https://img.shields.io/github/stars/GURU1001S?style=for-the-badge&color=f7768e&labelColor=0d1117&label=Total+Stars&logo=github&logoColor=white)
+&nbsp;
+![Repos](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FGURU1001S&query=public_repos&style=for-the-badge&color=7aa2f7&labelColor=0d1117&label=Public+Repos&logo=github&logoColor=white)
+&nbsp;
+![Commits](https://img.shields.io/badge/Commits-366%2B-bb9af7?style=for-the-badge&labelColor=0d1117&logo=git&logoColor=white)
+
+<br/>
+
+![PINNs](https://img.shields.io/badge/Research-PINNs-00d4ff?style=flat-square&labelColor=0d1117)
+![QML](https://img.shields.io/badge/Research-Quantum_ML-7aa2f7?style=flat-square&labelColor=0d1117)
+![CausalAI](https://img.shields.io/badge/Research-Causal_AI-bb9af7?style=flat-square&labelColor=0d1117)
+![DigitalTwin](https://img.shields.io/badge/Research-Digital_Twins-f7768e?style=flat-square&labelColor=0d1117)
+![MLOps](https://img.shields.io/badge/Research-MLOps-e0af68?style=flat-square&labelColor=0d1117)
 
 <br/>
 
