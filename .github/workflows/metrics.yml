@@ -1,0 +1,51 @@
+name: Generate Profile Metrics
+
+on:
+  schedule:
+    - cron: "0 0 * * *"   # daily at midnight UTC
+  workflow_dispatch:        # manual trigger
+  push:
+    branches: [main]
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Stats card (overview)
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: assets/metrics-stats.svg
+          user: GURU1001S
+          template: classic
+          base: header, activity, community, repositories
+          config_timezone: Asia/Kolkata
+          config_order: base.header, base.activity, base.community, base.repositories
+          plugin_languages: yes
+          plugin_languages_indepth: yes
+          plugin_languages_limit: 8
+          plugin_languages_sections: most-used
+          plugin_stars: yes
+          plugin_stars_limit: 3
+          output_action: commit
+          committer_branch: main
+          committer_message: "ci: update metrics [skip ci]"
+
+      - name: Languages card
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: assets/metrics-langs.svg
+          user: GURU1001S
+          template: classic
+          base: ""
+          plugin_languages: yes
+          plugin_languages_indepth: yes
+          plugin_languages_limit: 10
+          plugin_languages_details: bytes-size, percentage
+          output_action: commit
+          committer_branch: main
+          committer_message: "ci: update language metrics [skip ci]"
