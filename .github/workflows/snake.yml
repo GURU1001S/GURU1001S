@@ -7,17 +7,20 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - uses: Platane/snk@v3
-        id: snake-svg
+      - name: Generate snake animation
+        uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
@@ -27,9 +30,14 @@ jobs:
           snake_color: '#ff69b4'
           square_size: 6
 
-      - uses: crazy-max/ghaction-github-pages@v3.1.0
+      - name: Deploy to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
           build_dir: dist
+          committer_name: 'github-actions[bot]'
+          committer_email: '41898952+github-actions[bot]@users.noreply.github.com'
+          author_name: 'github-actions[bot]'
+          author_email: '41898952+github-actions[bot]@users.noreply.github.com'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
