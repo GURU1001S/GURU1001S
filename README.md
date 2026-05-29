@@ -287,9 +287,8 @@ Proves neural networks can perform **symbolic regression on physical simulations
 
 ## 🏆 TROPHIES
 
-<!-- github-profile-trophy.vercel.app confirmed working 2026 -->
-<!-- rank=-C,-B filters out beginner ranks, shows only earned ones -->
-<img src="https://github-profile-trophy.vercel.app/?username=GURU1001S&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8&column=6&rank=SSS,SS,S,AAA,AA,A" alt="GitHub Trophies"/>
+<!-- No rank filter — shows ALL trophies earned at any level -->
+<img src="https://github-profile-trophy.vercel.app/?username=GURU1001S&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&column=7" alt="GitHub Trophies"/>
 
 </div>
 
