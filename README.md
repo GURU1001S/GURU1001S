@@ -244,13 +244,6 @@ Proves neural networks can perform **symbolic regression on physical simulations
 ![Git](https://img.shields.io/badge/Git-366+_Commits-F05032?style=for-the-badge&logo=git&logoColor=white&labelColor=0d1117)
 ![Linux](https://img.shields.io/badge/Linux-Daily_OS-FCC624?style=for-the-badge&logo=linux&logoColor=black&labelColor=0d1117)
 
-**🌐 Frontend & Web**
-
-![Next.js](https://img.shields.io/badge/Next.js-Full_Stack-000000?style=for-the-badge&logo=nextdotjs&logoColor=white&labelColor=0d1117)
-![TypeScript](https://img.shields.io/badge/TypeScript-Type_Safe-3178C6?style=for-the-badge&logo=typescript&logoColor=white&labelColor=0d1117)
-![Three.js](https://img.shields.io/badge/Three.js-3D_Worlds-000000?style=for-the-badge&logo=threedotjs&logoColor=white&labelColor=0d1117)
-![Framer](https://img.shields.io/badge/Framer_Motion-Animations-0055FF?style=for-the-badge&logo=framer&logoColor=white&labelColor=0d1117)
-
 </div>
 
 ---
@@ -263,11 +256,6 @@ Proves neural networks can perform **symbolic regression on physical simulations
 <img height="180" src="assets/metrics-stats.svg" alt="GitHub Stats"/>
 &nbsp;
 <img height="180" src="assets/metrics-langs.svg" alt="Top Languages"/>
-
-<br/><br/>
-
-<!-- STREAK — streak-stats.demolab.com is confirmed stable 2026 -->
-<img src="https://streak-stats.demolab.com?user=GURU1001S&theme=tokyonight-duo&hide_border=true&background=0d1117&ring=00d4ff&fire=f7768e&currStreakLabel=00d4ff&sideLabels=7aa2f7&dates=c0caf5&stroke=0d1117" alt="GitHub Streak"/>
 
 <br/><br/>
 
