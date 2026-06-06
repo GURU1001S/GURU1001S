@@ -1,0 +1,90 @@
+<svg width="900" height="200" viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#020812"/>
+      <stop offset="100%" style="stop-color:#050f1a"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- Bar gradients -->
+    <linearGradient id="bar-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:0.3"/>
+    </linearGradient>
+    <linearGradient id="bar-blue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7aa2f7;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#7aa2f7;stop-opacity:0.3"/>
+    </linearGradient>
+    <linearGradient id="bar-purple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#bb9af7;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#bb9af7;stop-opacity:0.3"/>
+    </linearGradient>
+    <linearGradient id="bar-amber" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e0af68;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#e0af68;stop-opacity:0.3"/>
+    </linearGradient>
+    <linearGradient id="bar-red" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f7768e;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#f7768e;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="200" fill="url(#bg2)"/>
+  <rect width="900" height="200" fill="none" stroke="#00d4ff" stroke-width="0.5" opacity="0.2"/>
+
+  <!-- Section label -->
+  <text x="20" y="25" font-family="'Courier New', monospace" font-size="9" fill="#00d4ff" opacity="0.5" letter-spacing="4">LANGUAGE MATRIX // RESEARCH STACK ANALYSIS</text>
+  <line x1="20" y1="30" x2="880" y2="30" stroke="#00d4ff" stroke-width="0.3" opacity="0.2"/>
+
+  <!-- Language bars — each animates from 0 -->
+  <!-- Python 88% -->
+  <text x="20" y="58" font-family="'Courier New', monospace" font-size="10" fill="#00d4ff" opacity="0.85">Python</text>
+  <rect x="120" y="46" width="680" height="10" fill="#00d4ff" opacity="0.06" rx="1"/>
+  <rect x="120" y="46" width="0" height="10" fill="url(#bar-cyan)" rx="1" filter="url(#glow2)">
+    <animate attributeName="width" from="0" to="598" dur="1.8s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+  </rect>
+  <text x="730" y="58" font-family="'Courier New', monospace" font-size="9" fill="#00d4ff" opacity="0.6">88%</text>
+
+  <!-- PyTorch/C++ 6% -->
+  <text x="20" y="86" font-family="'Courier New', monospace" font-size="10" fill="#7aa2f7" opacity="0.85">PyTorch/C++</text>
+  <rect x="120" y="74" width="680" height="10" fill="#7aa2f7" opacity="0.06" rx="1"/>
+  <rect x="120" y="74" width="0" height="10" fill="url(#bar-blue)" rx="1" filter="url(#glow2)">
+    <animate attributeName="width" from="0" to="41" dur="1.8s" begin="0.2s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+  </rect>
+  <text x="730" y="86" font-family="'Courier New', monospace" font-size="9" fill="#7aa2f7" opacity="0.6">6%</text>
+
+  <!-- TypeScript 3% -->
+  <text x="20" y="114" font-family="'Courier New', monospace" font-size="10" fill="#bb9af7" opacity="0.85">TypeScript</text>
+  <rect x="120" y="102" width="680" height="10" fill="#bb9af7" opacity="0.06" rx="1"/>
+  <rect x="120" y="102" width="0" height="10" fill="url(#bar-purple)" rx="1" filter="url(#glow2)">
+    <animate attributeName="width" from="0" to="20" dur="1.8s" begin="0.4s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+  </rect>
+  <text x="730" y="114" font-family="'Courier New', monospace" font-size="9" fill="#bb9af7" opacity="0.6">3%</text>
+
+  <!-- YAML/Docker 2% -->
+  <text x="20" y="142" font-family="'Courier New', monospace" font-size="10" fill="#e0af68" opacity="0.85">YAML/Docker</text>
+  <rect x="120" y="130" width="680" height="10" fill="#e0af68" opacity="0.06" rx="1"/>
+  <rect x="120" y="130" width="0" height="10" fill="url(#bar-amber)" rx="1" filter="url(#glow2)">
+    <animate attributeName="width" from="0" to="14" dur="1.8s" begin="0.6s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+  </rect>
+  <text x="730" y="142" font-family="'Courier New', monospace" font-size="9" fill="#e0af68" opacity="0.6">2%</text>
+
+  <!-- Markdown/Other 1% -->
+  <text x="20" y="170" font-family="'Courier New', monospace" font-size="10" fill="#f7768e" opacity="0.85">Other</text>
+  <rect x="120" y="158" width="680" height="10" fill="#f7768e" opacity="0.06" rx="1"/>
+  <rect x="120" y="158" width="0" height="10" fill="url(#bar-red)" rx="1" filter="url(#glow2)">
+    <animate attributeName="width" from="0" to="7" dur="1.8s" begin="0.8s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+  </rect>
+  <text x="730" y="170" font-family="'Courier New', monospace" font-size="9" fill="#f7768e" opacity="0.6">1%</text>
+
+  <!-- Right panel - stat numbers -->
+  <line x1="760" y1="35" x2="760" y2="190" stroke="#00d4ff" stroke-width="0.4" opacity="0.2"/>
+  <text x="775" y="80" font-family="'Courier New', monospace" font-size="22" fill="#00d4ff" opacity="0.9" filter="url(#glow2)">366</text>
+  <text x="775" y="95" font-family="'Courier New', monospace" font-size="8" fill="#00d4ff" opacity="0.4" letter-spacing="1">COMMITS</text>
+  <text x="775" y="130" font-family="'Courier New', monospace" font-size="22" fill="#7aa2f7" opacity="0.9">14+</text>
+  <text x="775" y="145" font-family="'Courier New', monospace" font-size="8" fill="#7aa2f7" opacity="0.4" letter-spacing="1">REPOS</text>
+  <text x="775" y="178" font-family="'Courier New', monospace" font-size="22" fill="#bb9af7" opacity="0.9">5</text>
+  <text x="775" y="193" font-family="'Courier New', monospace" font-size="8" fill="#bb9af7" opacity="0.4" letter-spacing="1">DOMAINS</text>
+</svg>
