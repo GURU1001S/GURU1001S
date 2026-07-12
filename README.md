@@ -43,7 +43,7 @@ class GuruPrasaathS:
         self.name          = "Guru Prasaath S"
         self.alias         = "GURU1001S"
         self.role          = "AI Researcher × Physics-ML Engineer"
-        self.location      = "Coimbatore, Tamil Nadu, India 🇮🇳"
+        self.location      = "Tamil Nadu, India 🇮🇳"
 
         self.research_domains = [
             "Physics-Informed Neural Networks (PINNs)",
