@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 380" width="500" height="380">
+  <style>
+    .main-text { font-family: system-ui, -apple-system, sans-serif; }
+    .mono-text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+    .chart-label { font-size: 9px; fill: #64748b; }
+    .legend-text { font-size: 10px; font-weight: 600; }
+  </style>
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#070a13" />
+  <!-- Grid Lines -->
+  <line x1="60" y1="60" x2="440" y2="60" stroke="#1e293b" stroke-width="1" />
+  <line x1="60" y1="180" x2="440" y2="180" stroke="#1e293b" stroke-dasharray="2 4" stroke-width="1" />
+  <line x1="60" y1="300" x2="440" y2="300" stroke="#1e293b" stroke-width="1" />
+  <line x1="60" y1="60" x2="60" y2="300" stroke="#1e293b" stroke-width="1" />
+  <line x1="440" y1="60" x2="440" y2="300" stroke="#1e293b" stroke-width="1" />
+  <!-- Legend -->
+  <g transform="translate(60, 48)">
+    <rect width="8" height="8" rx="2" fill="#ef4444" />
+    <text x="14" y="8" fill="#ef4444" class="legend-text main-text">Vanilla Attention O(N²)</text>
+    <rect x="180" width="8" height="8" rx="2" fill="#06b6d4" />
+    <text x="194" y="8" fill="#06b6d4" class="legend-text main-text">TICSC Attention O(N·K)</text>
+  </g>
+  <text x="52" y="64" class="chart-label main-text" text-anchor="end">27.0 ms</text>
+  <text x="52" y="184" class="chart-label main-text" text-anchor="end">13.5 ms</text>
+  <text x="52" y="304" class="chart-label main-text" text-anchor="end">0.0 ms</text>
+  <text x="25" y="180" fill="#94a3b8" font-size="10" font-weight="600" text-anchor="middle" transform="rotate(-90 25 180)" class="main-text">Execution Time (ms)</text>
+  <text x="60.0" y="315" class="chart-label main-text" text-anchor="middle">128</text>
+  <text x="136.0" y="315" class="chart-label main-text" text-anchor="middle">256</text>
+  <line x1="136.0" y1="60" x2="136.0" y2="300" stroke="#1e293b" stroke-dasharray="2 4" stroke-width="1" />
+  <text x="212.0" y="315" class="chart-label main-text" text-anchor="middle">512</text>
+  <line x1="212.0" y1="60" x2="212.0" y2="300" stroke="#1e293b" stroke-dasharray="2 4" stroke-width="1" />
+  <text x="288.0" y="315" class="chart-label main-text" text-anchor="middle">1024</text>
+  <line x1="288.0" y1="60" x2="288.0" y2="300" stroke="#1e293b" stroke-dasharray="2 4" stroke-width="1" />
+  <text x="364.0" y="315" class="chart-label main-text" text-anchor="middle">2048</text>
+  <line x1="364.0" y1="60" x2="364.0" y2="300" stroke="#1e293b" stroke-dasharray="2 4" stroke-width="1" />
+  <text x="440.0" y="315" class="chart-label main-text" text-anchor="middle">4096</text>
+  <text x="250" y="328" fill="#94a3b8" font-size="10" text-anchor="middle" font-weight="600" class="main-text">Sequence Length (N)</text>
+  <!-- Curves -->
+  <path d="M 60.0,297.0 L 136.0,296.2 L 212.0,293.7 L 288.0,285.2 L 364.0,255.1 L 440.0,85.8" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-dasharray="1000" stroke-dashoffset="1000" stroke-linecap="round">    <animate attributeName="stroke-dashoffset" values="1000;0" dur="4.0s" repeatCount="indefinite" />  </path>  <path d="M 60.0,297.2 L 136.0,297.2 L 212.0,296.3 L 288.0,294.6 L 364.0,293.5 L 440.0,290.9" fill="none" stroke="#06b6d4" stroke-width="2.5" stroke-dasharray="1000" stroke-dashoffset="1000" stroke-linecap="round">    <animate attributeName="stroke-dashoffset" values="1000;0" dur="4.0s" repeatCount="indefinite" />  </path>
+  <!-- Data Point Markers -->
+  <circle cx="60.0" cy="297.0" r="4" fill="#ef4444" stroke="#070a13" stroke-width="1" opacity="0.0">    <animate attributeName="opacity" calcMode="discrete" values="1.0;1.0;1.0;1.0;1.0;1.0;1.0;1.0;1.0;1.0" dur="4.0s" repeatCount="indefinite" />  </circle>  <circle cx="60.0" cy="297.2" r="4" fill="#06b6d4" stroke="#070a13" stroke-width="1" opacity="0.0">    <animate attributeName="opacity" calcMode="discrete" values="1.0;1.0;1.0;1.0;1.0;1.0;1.0;1.0;1.0;1.0" dur="4.0s" repeatCount="indefinite" />  </circle>
+  <circle cx="136.0" cy="296.2" r="4" fill="#ef4444" stroke="#070a13" stroke-width="1" opacity="0.0">    <animate attributeName="opacity" calcMode="discrete" values="0.0;0.0;1.0;1.0;1.0;1.0;1.0;1.0;1.0;1.0" dur="4.0s" repeatCount="indefinite" />  </circle>  <circle cx="136.0" cy="297.2" r="4" fill="#06b6d4" stroke="#070a13" stroke-width="1" opacity="0.0">    <animate attributeName="opacity" calcMode="discrete" values="0.0;0.0;1.0;1.0;1.0;1.0;1.0;1.0;1.0;1.0" dur="4.0s" repeatCount="indefinite" />  </circle>
+  <circle cx="212.0" cy="293.7" r="4" fill="#ef4444" stroke="#070a13" stroke-width="1" opacity="0.0">    <animate attributeName="opacity" calcMode="discrete" values="0.0;0.0;0.0;0.0;1.0;1.0;1.0;1.0;1.0;1.0" dur="4.0s" repeatCount="indefinite" />  </circle>  <circle cx="212.0" cy="296.3" r="4" fill="#06b6d4" stroke="#070a13" stroke-width="1" opacity="0.0">    <animate attributeName="opacity" calcMode="discrete" values="0.0;0.0;0.0;0.0;1.0;1.0;1.0;1.0;1.0;1.0" dur="4.0s" repeatCount="indefinite" />  </circle>
+  <circle cx="288.0" cy="285.2" r="4" fill="#ef4444" stroke="#070a13" stroke-width="1" opacity="0.0">    <animate attributeName="opacity" calcMode="discrete" values="0.0;0.0;0.0;0.0;0.0;0.0;1.0;1.0;1.0;1.0" dur="4.0s" repeatCount="indefinite" />  </circle>  <circle cx="288.0" cy="294.6" r="4" fill="#06b6d4" stroke="#070a13" stroke-width="1" opacity="0.0">    <animate attributeName="opacity" calcMode="discrete" values="0.0;0.0;0.0;0.0;0.0;0.0;1.0;1.0;1.0;1.0" dur="4.0s" repeatCount="indefinite" />  </circle>
+  <circle cx="364.0" cy="255.1" r="4" fill="#ef4444" stroke="#070a13" stroke-width="1" opacity="0.0">    <animate attributeName="opacity" calcMode="discrete" values="0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;1.0;1.0" dur="4.0s" repeatCount="indefinite" />  </circle>  <circle cx="364.0" cy="293.5" r="4" fill="#06b6d4" stroke="#070a13" stroke-width="1" opacity="0.0">    <animate attributeName="opacity" calcMode="discrete" values="0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;1.0;1.0" dur="4.0s" repeatCount="indefinite" />  </circle>
+  <circle cx="440.0" cy="85.8" r="4" fill="#ef4444" stroke="#070a13" stroke-width="1" opacity="0.0">    <animate attributeName="opacity" calcMode="discrete" values="0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;1.0" dur="4.0s" repeatCount="indefinite" />  </circle>  <circle cx="440.0" cy="290.9" r="4" fill="#06b6d4" stroke="#070a13" stroke-width="1" opacity="0.0">    <animate attributeName="opacity" calcMode="discrete" values="0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;0.0;1.0" dur="4.0s" repeatCount="indefinite" />  </circle>
+  <!-- Sweep Scanline -->
+  <line x1="60" y1="50" x2="60" y2="305" stroke="#f8fafc" stroke-width="1.2" opacity="0.75">    <animateTransform attributeName="transform" type="translate" values="0,0; 380,0" dur="4.0s" repeatCount="indefinite" />  </line>
+  <!-- Dynamic Stat HUD -->
+  <g display="inline">    <animate attributeName="display" calcMode="discrete" values="inline;none;none;none;none;none" dur="4.0s" repeatCount="indefinite" />    <rect x="250" y="80" width="180" height="75" rx="5" fill="#0b0f19" stroke="#334155" stroke-width="1" opacity="0.9" />    <text x="262" y="98" fill="#94a3b8" font-size="10.5" font-weight="700" class="main-text">SEQUENCE N = 128</text>    <text x="262" y="118" fill="#ef4444" font-size="9.5" class="main-text">O(N²): <tspan class="mono-text">0.34ms</tspan> | <tspan class="mono-text">1.1KB</tspan></text>    <text x="262" y="136" fill="#06b6d4" font-size="9.5" class="main-text">O(N·K): <tspan class="mono-text">0.31ms</tspan> | <tspan class="mono-text">1.6KB</tspan></text>  </g>
+  <g display="none">    <animate attributeName="display" calcMode="discrete" values="none;inline;none;none;none;none" dur="4.0s" repeatCount="indefinite" />    <rect x="250" y="80" width="180" height="75" rx="5" fill="#0b0f19" stroke="#334155" stroke-width="1" opacity="0.9" />    <text x="262" y="98" fill="#94a3b8" font-size="10.5" font-weight="700" class="main-text">SEQUENCE N = 256</text>    <text x="262" y="118" fill="#ef4444" font-size="9.5" class="main-text">O(N²): <tspan class="mono-text">0.43ms</tspan> | <tspan class="mono-text">1.1KB</tspan></text>    <text x="262" y="136" fill="#06b6d4" font-size="9.5" class="main-text">O(N·K): <tspan class="mono-text">0.31ms</tspan> | <tspan class="mono-text">1.6KB</tspan></text>  </g>
+  <g display="none">    <animate attributeName="display" calcMode="discrete" values="none;none;inline;none;none;none" dur="4.0s" repeatCount="indefinite" />    <rect x="250" y="80" width="180" height="75" rx="5" fill="#0b0f19" stroke="#334155" stroke-width="1" opacity="0.9" />    <text x="262" y="98" fill="#94a3b8" font-size="10.5" font-weight="700" class="main-text">SEQUENCE N = 512</text>    <text x="262" y="118" fill="#ef4444" font-size="9.5" class="main-text">O(N²): <tspan class="mono-text">0.71ms</tspan> | <tspan class="mono-text">1.1KB</tspan></text>    <text x="262" y="136" fill="#06b6d4" font-size="9.5" class="main-text">O(N·K): <tspan class="mono-text">0.41ms</tspan> | <tspan class="mono-text">1.7KB</tspan></text>  </g>
+  <g display="none">    <animate attributeName="display" calcMode="discrete" values="none;none;none;inline;none;none" dur="4.0s" repeatCount="indefinite" />    <rect x="250" y="80" width="180" height="75" rx="5" fill="#0b0f19" stroke="#334155" stroke-width="1" opacity="0.9" />    <text x="262" y="98" fill="#94a3b8" font-size="10.5" font-weight="700" class="main-text">SEQUENCE N = 1024</text>    <text x="262" y="118" fill="#ef4444" font-size="9.5" class="main-text">O(N²): <tspan class="mono-text">1.67ms</tspan> | <tspan class="mono-text">1.1KB</tspan></text>    <text x="262" y="136" fill="#06b6d4" font-size="9.5" class="main-text">O(N·K): <tspan class="mono-text">0.60ms</tspan> | <tspan class="mono-text">1.7KB</tspan></text>  </g>
+  <g display="none">    <animate attributeName="display" calcMode="discrete" values="none;none;none;none;inline;none" dur="4.0s" repeatCount="indefinite" />    <rect x="250" y="80" width="180" height="75" rx="5" fill="#0b0f19" stroke="#334155" stroke-width="1" opacity="0.9" />    <text x="262" y="98" fill="#94a3b8" font-size="10.5" font-weight="700" class="main-text">SEQUENCE N = 2048</text>    <text x="262" y="118" fill="#ef4444" font-size="9.5" class="main-text">O(N²): <tspan class="mono-text">5.05ms</tspan> | <tspan class="mono-text">1.1KB</tspan></text>    <text x="262" y="136" fill="#06b6d4" font-size="9.5" class="main-text">O(N·K): <tspan class="mono-text">0.73ms</tspan> | <tspan class="mono-text">1.7KB</tspan></text>  </g>
+  <g display="none">    <animate attributeName="display" calcMode="discrete" values="none;none;none;none;none;inline" dur="4.0s" repeatCount="indefinite" />    <rect x="250" y="80" width="180" height="75" rx="5" fill="#0b0f19" stroke="#334155" stroke-width="1" opacity="0.9" />    <text x="262" y="98" fill="#94a3b8" font-size="10.5" font-weight="700" class="main-text">SEQUENCE N = 4096</text>    <text x="262" y="118" fill="#ef4444" font-size="9.5" class="main-text">O(N²): <tspan class="mono-text">24.09ms</tspan> | <tspan class="mono-text">1.1KB</tspan></text>    <text x="262" y="136" fill="#06b6d4" font-size="9.5" class="main-text">O(N·K): <tspan class="mono-text">1.02ms</tspan> | <tspan class="mono-text">1.7KB</tspan></text>  </g>
+  <text x="30" y="30" fill="#f8fafc" font-size="13" font-weight="700" class="main-text">Attention vs TICSC Complexity Scaling</text>
+</svg>

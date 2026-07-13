@@ -1,0 +1,10 @@
+{
+  "version": "v4",
+  "solver": "Physics-Hierarchical Adaptive Structured Evolution (PHASE)",
+  "timestamp": "2026-07-13",
+  "test_pde": "2D Poisson Equation (-Delta u = f)",
+  "known_issues": [
+    "patch continuity bug (inter-patch interfaces mismatching at x=0.5, y=0.5)",
+    "boundary gradient poisoning (instability near Dirichlet edges)"
+  ]
+}
