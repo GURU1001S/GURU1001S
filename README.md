@@ -4,11 +4,11 @@
 
 ### Physics-Informed Neural Network (PINN) Telemetry
 ![Live PINN Heat Equation Solver](assets/pinn-live.svg)
-*This visualization is a live-rendered PINN Heat Equation solver, automatically retrained and updated daily via a [GitHub Actions workflow](.github/workflows/daily-render.yml).*
+
 
 ### Causal Telemetry Graph
 ![Live Streaming Causal Graph](assets/causal-live.svg)
-*This graph is a live simulated causal DAG with daily-changing intervention parameters, automatically regenerated and updated daily via a [GitHub Actions workflow](.github/workflows/daily-render.yml).*
+
 
 ---
 
